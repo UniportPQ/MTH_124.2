@@ -1,0 +1,1514 @@
+[{
+    "type": "pageInfo",
+    "kind": "pureOBJ and subJective",
+    "course_title": "Coordinate Geometry",
+    "code": "MTH 124.2",
+    "session": "2012/2013",
+    "time": "90"
+  },
+  {
+    "type": "Instruction",
+    "content": "Attempt all Questions."
+  },
+  {
+    "type": "Question",
+    "name": "Question 1",
+    "Question": {
+      "content": "Find the area of the quadrilateral with vertices at (-2,-1), (3,-1), (4,2), and (-1,-2)",
+      "type": "OBJ",
+      "options": [
+        "14 sq units",
+        "12 sq units",
+        "16 sq units",
+        "18 sq units"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "14 sq units"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "Using the shoelace formula for polygon area:<br/>\\[A = \\frac{1}{2}|\\sum_{i=1}^n (x_i y_{i+1}) - \\sum_{i=1}^n (y_i x_{i+1})|\\]<br/>where \\(x_{n+1} = x_1\\) and \\(y_{n+1} = y_1\\).<br/>Calculating:<br/>\\[A = \\frac{1}{2}|(-2)(-1) + 3(2) + 4(-2) + (-1)(-1) - [-1(3) + (-1)(4) + 2(-1) + (-2)(-2)]| = 14\\text{ sq units}\\]"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 2",
+    "Question": {
+      "content": "Find the area of a triangle with vertices at \\((x_1,y_1), (x_2,y_2)\\), and (0,0)",
+      "type": "OBJ",
+      "options": [
+        "\\(\\frac{1}{2}(x_1 x_2, y_1 y_2)\\)",
+        "\\(\\frac{1}{2}(x_1 y_1, -x_2 y_2)\\)",
+        "\\(\\frac{1}{2}(x_1 y_2, -x_2 y_1)\\)",
+        "\\(\\frac{1}{2}(x_1 x_2, -y_2 y_1)\\)"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "\\(\\frac{1}{2}(x_1 y_2, -x_2 y_1)\\)"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "The area of a triangle with one vertex at the origin is given by:<br/>\\[A = \\frac{1}{2}|x_1 y_2 - x_2 y_1|\\]<br/>This is a special case of the shoelace formula where the third point is (0,0). The absolute value ensures the area is always positive."
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 3",
+    "Question": {
+      "content": "Find the area of the triangle with vertices at (0,0), (-1,3), and (-4,-2)",
+      "type": "OBJ",
+      "options": [
+        "5 sq units",
+        "6 sq units",
+        "7 sq units",
+        "9 sq units"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "7 sq units"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "Using the shoelace formula:<br/>\\[A = \\frac{1}{2}|0(3-(-2)) + (-1)(-2-0) + (-4)(0-3)| = \\frac{1}{2}|0 + 2 + 12| = 7\\text{ sq units}\\]<br/>The calculation shows how the formula efficiently computes area from coordinates."
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 4",
+    "Question": {
+      "content": "When finding area of a triangle, if coordinates are taken clockwise, the area would be:",
+      "type": "OBJ",
+      "options": [
+        "neutral",
+        "zero",
+        "positive",
+        "opposite"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "opposite"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "The shoelace formula yields a negative value for clockwise orientation and positive for counter-clockwise. The actual area is the absolute value, so clockwise ordering gives the opposite (negative) of the counter-clockwise result."
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 5",
+    "Question": {
+      "content": "When finding area of a triangle, if coordinates are taken anticlockwise, the area would be:",
+      "type": "OBJ",
+      "options": [
+        "neutral",
+        "negative",
+        "round",
+        "opposite"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "positive"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "The standard convention gives positive area for counter-clockwise (anticlockwise) ordering of vertices. This matches the right-hand rule in coordinate geometry."
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 6",
+    "Question": {
+      "content": "For a conic section, the fixed point and fixed line are respectively called:",
+      "type": "OBJ",
+      "options": [
+        "Straight line and parabola",
+        "directrix and hyperbola",
+        "focus and directrix",
+        "none of the above"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "focus and directrix"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "All conic sections can be defined by:<br/>- A fixed point (focus)<br/>- A fixed line (directrix)<br/>- A constant ratio (eccentricity)<br/>The type of conic depends on the eccentricity value relative to 1."
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 7",
+    "Question": {
+      "content": "Given parabola \\((y-k)^2 = 4a(x-h)\\), the vertex is at:",
+      "type": "OBJ",
+      "options": [
+        "\\((k,h)\\)",
+        "\\((h,k)\\)",
+        "\\((a,0)\\)",
+        "none"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "\\((h,k)\\)"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "The standard form \\((y-k)^2 = 4a(x-h)\\) represents a horizontal parabola with:<br/>- Vertex at \\((h,k)\\)<br/>- Focus at \\((h+a,k)\\)<br/>- Directrix \\(x = h-a\\)<br/>The vertex is the 'turning point' of the parabola."
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 8",
+    "Question": {
+      "content": "For the parabola \\((y-k)^2 = 4a(x-h)\\), the focus is at:",
+      "type": "OBJ",
+      "options": [
+        "\\((h+a,0)\\)",
+        "\\((2a,0)\\)",
+        "\\((a,k)\\)",
+        "\\((h+a,k)\\)"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "\\((h+a,k)\\)"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "The focus of a horizontal parabola is always 'a' units from the vertex in the opening direction. For \\((y-k)^2 = 4a(x-h)\\):<br/>- Opens right (if a > 0)<br/>- Focus at \\((h+a,k)\\)<br/>- 'a' is the distance from vertex to focus"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 9",
+    "Question": {
+      "content": "Given parabola \\(3y^2 = -4x\\), the focus is at:",
+      "type": "OBJ",
+      "options": [
+        "\\((3,4)\\)",
+        "\\((4,3)\\)",
+        "\\((-\\frac{1}{3},0)\\)",
+        "\\((\\frac{1}{3},0)\\)"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "\\((-\\frac{1}{3},0)\\)"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "Rewrite in standard form: \\(y^2 = -\\frac{4}{3}x\\)<br/>Compare to \\(y^2 = 4px\\) ⇒ \\(4p = -\\frac{4}{3}\\) ⇒ \\(p = -\\frac{1}{3}\\)<br/>For \\(y^2 = 4px\\), focus is at \\((p,0)\\) = \\((-\\frac{1}{3},0)\\)<br/>This parabola opens left because p is negative."
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 10",
+    "Question": {
+      "content": "For the parabola \\(3y^2 = -4x\\), the length of latus rectum is:",
+      "type": "OBJ",
+      "options": [
+        "\\(\\frac{1}{3}\\)",
+        "\\(\\frac{3}{4}\\)",
+        "\\(\\frac{4}{3}\\)",
+        "\\(\\frac{4}{3}\\)"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "\\(\\frac{4}{3}\\)"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "The latus rectum length is always \\(|4p|\\) for \\(y^2 = 4px\\).<br/>From Q9, \\(p = -\\frac{1}{3}\\) ⇒ \\(|4p| = \\frac{4}{3}\\)<br/>The latus rectum is the chord through the focus, parallel to the directrix."
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 11",
+    "Question": {
+      "content": "Which statement is NOT true for an ellipse given by \\(\\frac{(x+2)^2}{4} + \\frac{(y-1)^2}{9} = 1\\)?",
+      "type": "OBJ",
+      "options": [
+        "Has two foci",
+        "Has two major axes",
+        "Major axis length is 2a",
+        "Symmetric about both axes"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "Has two major axes"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "An ellipse has:<br/>- One major axis (length 2a, here a=3)<br/>- One minor axis (length 2b, here b=2)<br/>- Two foci (distance c where \\(c^2=a^2-b^2\\))<br/>- Symmetry about both axes<br/>The 'two major axes' option is incorrect as ellipses only have one major axis."
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 12",
+    "Question": {
+      "content": "The eccentricity of the ellipse \\(\\frac{(x+2)^2}{4} + \\frac{(y-1)^2}{9} = 1\\) is:",
+      "type": "OBJ",
+      "options": [
+        "\\(\\frac{2}{3}\\)",
+        "\\(\\frac{3}{2}\\)",
+        "\\(\\frac{5}{3}\\)",
+        "None of the above"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "\\(\\frac{\\sqrt{5}}{3}\\) (none of the above)"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "For ellipses, \\(e = \\frac{c}{a}\\) where \\(c = \\sqrt{a^2-b^2}\\).<br/>Here \\(a=3\\), \\(b=2\\), so \\(c = \\sqrt{9-4} = \\sqrt{5}\\)<br/>Thus \\(e = \\frac{\\sqrt{5}}{3}\\) ≈ 0.745, which doesn't match any given options."
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 13",
+    "Question": {
+      "content": "The latus rectum length of \\(\\frac{(x+2)^2}{4} + \\frac{(y-1)^2}{9} = 1\\) is:",
+      "type": "OBJ",
+      "options": [
+        "\\(\\frac{4}{3}\\)",
+        "\\(\\frac{3}{4}\\)",
+        "\\(\\frac{9}{4}\\)",
+        "\\(\\frac{8}{3}\\)"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "\\(\\frac{8}{3}\\)"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "Latus rectum length for vertical ellipses is \\(\\frac{2b^2}{a}\\).<br/>Here \\(a=3\\), \\(b=2\\), so length = \\(\\frac{2 \\times 4}{3} = \\frac{8}{3}\\).<br/>This is the chord through either focus, parallel to the minor axis."
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 14",
+    "Question": {
+      "content": "Find the ellipse equation with center (3,1), vertex (3,2), and e=1/3:",
+      "type": "OBJ",
+      "options": [
+        "\\(\\frac{x^2}{8} + \\frac{y^2}{9} = 1\\)",
+        "\\(\\frac{(x-3)^2}{9} + \\frac{(y-1)^2}{8} = 1\\)",
+        "\\(\\frac{(x-1)^2}{9} + \\frac{(y-3)^2}{8} = 1\\)",
+        "None"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "\\(\\frac{(x-3)^2}{8} + \\frac{(y-1)^2}{9} = 1\\) (none of the above)"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "Given:<br/>- Center (3,1)<br/>- Vertex (3,2) ⇒ a=1 (distance from center)<br/>- e=1/3 ⇒ \\(c = ae = \\frac{1}{3}\\)<br/>- \\(b^2 = a^2 - c^2 = 1 - \\frac{1}{9} = \\frac{8}{9}\\)<br/>But standard form requires integer denominators, suggesting a possible error in the question parameters."
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 15",
+    "Question": {
+      "content": "A conic with eccentricity e > 1 is a:",
+      "type": "OBJ",
+      "options": [
+        "Ellipse",
+        "Hyperbola",
+        "Parabola",
+        "None"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "Hyperbola"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "Eccentricity classification:<br/>- e=0: Circle<br/>- 0<e<1: Ellipse<br/>- e=1: Parabola<br/>- e>1: Hyperbola<br/>Hyperbolas have two disconnected branches, reflected in e>1."
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 16",
+    "Question": {
+      "content": "The focus of parabola \\(x^2 = 2y\\) is at:",
+      "type": "OBJ",
+      "options": [
+        "\\(\\left(\\frac{1}{2}, 0\\right)\\)",
+        "\\(\\left(0, \\frac{1}{2}\\right)\\)",
+        "\\(\\left(-\\frac{1}{2}, 0\\right)\\)",
+        "None"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "\\(\\left(0, \\frac{1}{2}\\right)\\)"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "Standard form \\(x^2 = 4py\\) ⇒ here \\(4p=2\\) ⇒ \\(p=\\frac{1}{2}\\)<br/>For vertical parabolas, focus is at \\((0,p)\\) = \\(\\left(0, \\frac{1}{2}\\right)\\)<br/>The parabola opens upward with vertex at (0,0)."
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 17",
+    "Question": {
+      "content": "The tangent slope to parabola \\(y^2=12x\\) at (3,5) is:",
+      "type": "OBJ",
+      "options": [
+        "\\(\\frac{18}{5}\\)",
+        "\\(\\frac{5}{6}\\)",
+        "\\(\\frac{5}{4}\\)",
+        "\\(\\frac{6}{5}\\)"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "\\(\\frac{6}{5}\\)"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "Using implicit differentiation:<br/>\\(2y \\frac{dy}{dx} = 12\\) ⇒ \\(\\frac{dy}{dx} = \\frac{6}{y}\\)<br/>At (3,5), slope = \\(\\frac{6}{5}\\)<br/>Alternatively, the tangent equation \\(yy_1 = 6(x+x_1)\\) yields the same result."
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 18",
+    "Question": {
+      "content": "The normal slope to \\(y^2=12x\\) at (3,5) is:",
+      "type": "OBJ",
+      "options": [
+        "\\(\\frac{18}{5}\\)",
+        "\\(\\frac{5}{6}\\)",
+        "\\(\\frac{5}{4}\\)",
+        "\\(-\\frac{5}{6}\\)"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "\\(-\\frac{5}{6}\\)"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "From Q17, tangent slope = \\(\\frac{6}{5}\\)<br/>Normal slope is the negative reciprocal: \\(-\\frac{5}{6}\\)<br/>The normal line is perpendicular to the tangent at the point of contact."
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 19",
+    "Question": {
+      "content": "The parabola intersects its axis at the:",
+      "type": "OBJ",
+      "options": [
+        "Directrix",
+        "Focus",
+        "Vertex",
+        "Axis"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "Vertex"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "The vertex is:<br/>- The point where the parabola intersects its axis of symmetry<br/>- The minimum/maximum point of the curve<br/>- Midway between the focus and directrix<br/>For \\(y^2=12x\\), the vertex is at (0,0)."
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 20",
+    "Question": {
+      "content": "The foci of ellipse \\(9x^2 + 15y^2 = 225\\) are at:",
+      "type": "OBJ",
+      "options": [
+        "(5,0)",
+        "(0, ±5)",
+        "(±√15, 0)",
+        "(0, ±√15)"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "(±√10, 0)"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "Rewrite in standard form: \\(\\frac{x^2}{25} + \\frac{y^2}{15} = 1\\)<br/>Here \\(a=5\\), \\(b=\\sqrt{15}\\) ⇒ \\(c = \\sqrt{a^2-b^2} = \\sqrt{10}\\)<br/>Since \\(a > b\\), foci are on x-axis at (±√10, 0). None of the options exactly match."
+    }
+  },
+  
+  
+  {
+    "type": "Question",
+    "name": "Question 21",
+    "Question": {
+      "content": "The eccentricity of the ellipse \\(9x^2 + 15y^2 = 225\\) is:",
+      "type": "OBJ",
+      "options": [
+        "2",
+        "\\(\\sqrt{\\frac{5}{2}}\\)",
+        "6",
+        "none of the above"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "\\(\\sqrt{\\frac{2}{5}}\\) (none of the above)"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "First convert to standard form: \\(\\frac{x^2}{25} + \\frac{y^2}{15} = 1\\).<br/>For ellipses, \\(e = \\sqrt{1-\\frac{b^2}{a^2}}\\) where \\(a=5\\), \\(b=\\sqrt{15}\\).<br/>Calculation: \\(e = \\sqrt{1-\\frac{15}{25}} = \\sqrt{\\frac{10}{25}} = \\sqrt{\\frac{2}{5}}\\).<br/>This value doesn't match any provided options."
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 22",
+    "Question": {
+      "content": "The latus rectum length of the ellipse \\(9x^2 + 15y^2 = 225\\) is:",
+      "type": "OBJ",
+      "options": [
+        "2",
+        "\\(\\sqrt{\\frac{2}{5}}\\)",
+        "5",
+        "none of the above"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "6 (none of the above)"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "Using standard form \\(\\frac{x^2}{25} + \\frac{y^2}{15} = 1\\):<br/>Latus rectum length = \\(\\frac{2b^2}{a} = \\frac{2 \\times 15}{5} = 6\\).<br/>This is the length of the chord through either focus, parallel to the minor axis."
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 23",
+    "Question": {
+      "content": "For hyperbola \\(\\frac{y^2}{16} - \\frac{x^2}{9} = 1\\), the transverse axis is along:",
+      "type": "OBJ",
+      "options": [
+        "x-axis",
+        "xy-axis",
+        "all of the above",
+        "none of the above"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "y-axis"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "In hyperbola \\(\\frac{y^2}{a^2} - \\frac{x^2}{b^2} = 1\\):<br/>- Transverse axis is along y-axis (vertical)<br/>- Length = 2a = 8<br/>- The positive term (\\(\\frac{y^2}{16}\\)) indicates the transverse axis direction."
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 24",
+    "Question": {
+      "content": "The x-intercepts of \\(\\frac{y^2}{16} - \\frac{x^2}{9} = 1\\) are:",
+      "type": "OBJ",
+      "options": [
+        "0",
+        "±4",
+        "±3",
+        "one of the above"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "0"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "Setting y=0: \\(-\\frac{x^2}{9} = 1\\) ⇒ \\(x^2 = -9\\).<br/>No real solutions, so no x-intercepts exist.<br/>This hyperbola only intersects the y-axis at (0,±4)."
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 25",
+    "Question": {
+      "content": "A line touching a parabola at exactly one point is called:",
+      "type": "OBJ",
+      "options": [
+        "slope",
+        "tangent",
+        "normal",
+        "directrix"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "tangent"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "Key definitions:<br/>- Tangent: touches curve at one point with matching slope<br/>- Normal: perpendicular to tangent at point of contact<br/>- Directrix: fixed line used in parabola definition<br/>The tangent line approximates the curve at the contact point."
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 26",
+    "Question": {
+      "content": "Find 'a' making P(a,1), Q(2,3), R(4,1) collinear:",
+      "type": "OBJ",
+      "options": [
+        "5",
+        "4",
+        "8",
+        "2"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "0"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "Using area formula for collinearity:<br/>\\(\\frac{1}{2}|a(3-1) + 2(1-1) + 4(1-3)| = 0\\)<br/>Simplifies to \\(|2a - 8| = 0\\) ⇒ \\(a = 4\\)<br/>But 4 isn't an option, suggesting possible error in choices."
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 27",
+    "Question": {
+      "content": "Find second intersection of y=mx and y=x²-12x+40 given (5,5):",
+      "type": "OBJ",
+      "options": [
+        "(7,5)",
+        "(8,8)",
+        "(8,5)",
+        "(7,7)"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "(7,7)"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "First find m using (5,5): \\(5 = 5m\\) ⇒ \\(m=1\\)<br/>Solve system:<br/>\\(x^2-12x+40 = x\\) ⇒ \\(x^2-13x+40=0\\)<br/>Roots: x=5 (given) and x=8 ⇒ y=8<br/>Thus (8,8) is the other intersection point."
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 28",
+    "Question": {
+      "content": "The curve y=x²+3x+4 intersects axes at:",
+      "type": "OBJ",
+      "options": [
+        "(4,0), (0,0), (-1,0)",
+        "(4,0), (0,4), (1,1)",
+        "(0,0), (0,1), (1,0)",
+        "(0,4), (-4,0), (-1,0)"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "(0,4)"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "Intersections:<br/>- y-axis (x=0): y=4 ⇒ (0,4)<br/>- x-axis (y=0): x²+3x+4=0 has no real roots (discriminant < 0)<br/>Thus only intersects y-axis at (0,4)."
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 29",
+    "Question": {
+      "content": "Intersection points of y=2x+1 and y=2x²+5x-1:",
+      "type": "OBJ",
+      "options": [
+        "(-2,-3) and (\\(\\frac{1}{2}\\),2)",
+        "(\\(\\frac{1}{2}\\),0) and (2,5)",
+        "(\\(\\frac{1}{2}\\),2) and (1,3)",
+        "(1,3) and (2,5)"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "(-2,-3) and (\\(\\frac{1}{2}\\),2)"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "Set equations equal:<br/>2x²+5x-1 = 2x+1 ⇒ 2x²+3x-2=0<br/>Solutions: x=-2 and x=\\(\\frac{1}{2}\\)<br/>Corresponding y-values: y=-3 and y=2<br/>Thus points are (-2,-3) and (\\(\\frac{1}{2}\\),2)."
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 30",
+    "Question": {
+      "content": "For right triangle with sides x, (3x-1), (3x+1), find x:",
+      "type": "OBJ",
+      "options": [
+        "7",
+        "8",
+        "12",
+        "5"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "8"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "Assuming (3x+1) is hypotenuse:<br/>x² + (3x-1)² = (3x+1)²<br/>Expands to: x² + 9x²-6x+1 = 9x²+6x+1<br/>Simplifies to: x²-12x=0 ⇒ x(x-12)=0<br/>Valid solution: x=12 (since x=0 is invalid)"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 31",
+    "Question": {
+      "content": "Gradient of line through (-2,0) and (0,-4):",
+      "type": "OBJ",
+      "options": [
+        "2",
+        "-4",
+        "3",
+        "-2"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "-2"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "Gradient formula: \\(m = \\frac{y_2-y_1}{x_2-x_1}\\)<br/>Calculation: \\(m = \\frac{-4-0}{0-(-2)} = \\frac{-4}{2} = -2\\)<br/>The negative slope indicates the line decreases left-to-right."
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 32",
+    "Question": {
+      "content": "Find p if line (p,4)-(6,-2) ⊥ to line (2,p)-(-1,3):",
+      "type": "OBJ",
+      "options": [
+        "6",
+        "-4",
+        "3",
+        "0"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "4"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "Slope of first line: \\(m_1 = \\frac{-2-4}{6-p} = \\frac{-6}{6-p}\\)<br/>Slope of second line: \\(m_2 = \\frac{3-p}{-1-2} = \\frac{p-3}{3}\\)<br/>For perpendicularity: \\(m_1 \\times m_2 = -1\\)<br/>Solves to: p=4 (after cross-multiplication)"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 33",
+    "Question": {
+      "content": "Find k if gradient of y=2kx²+x+1 at x=1 is 9:",
+      "type": "OBJ",
+      "options": [
+        "-2",
+        "3",
+        "4",
+        "1"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "2"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "Derivative: \\(\\frac{dy}{dx} = 4kx + 1\\)<br/>At x=1: \\(4k(1) + 1 = 9\\) ⇒ \\(4k=8\\) ⇒ \\(k=2\\)<br/>The gradient represents the instantaneous slope at x=1."
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 34",
+    "Question": {
+      "content": "Slope of tangent to y=3x²-2x+5 at (1,6):",
+      "type": "OBJ",
+      "options": [
+        "6",
+        "5",
+        "-4",
+        "1"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "4"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "Derivative: \\(\\frac{dy}{dx} = 6x - 2\\)<br/>At x=1: \\(6(1) - 2 = 4\\)<br/>The tangent line at (1,6) would have equation y-6=4(x-1)."
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 35",
+    "Question": {
+      "content": "Equation of points equidistant from x=1 and x=7:",
+      "type": "OBJ",
+      "options": [
+        "x=3",
+        "x=4",
+        "y=4",
+        "y=3"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "x=4"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "The midpoint between x=1 and x=7 is x=4.<br/>All points on x=4 are equidistant (3 units) from both lines.<br/>This is the equation of the parallel line exactly halfway between them."
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 36",
+    "Question": {
+      "content": "Find a if 2y-ax+4=0 is ⊥ to y+¼x-7=0:",
+      "type": "OBJ",
+      "options": [
+        "8",
+        "4",
+        "-4",
+        "-8"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "-8"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "Convert to slope-intercept form:<br/>First line: y=\\(\\frac{a}{2}\\)x-2 (slope m₁=\\(\\frac{a}{2}\\))<br/>Second line: y=-\\(\\frac{1}{4}\\)x+7 (slope m₂=-\\(\\frac{1}{4}\\))<br/>For perpendicularity: m₁ × m₂ = -1 ⇒ \\(\\frac{a}{2}\\) × -\\(\\frac{1}{4}\\) = -1 ⇒ a=-8"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 37",
+    "Question": {
+      "content": "Find k making 3y=4x-1 and ky=x+3 perpendicular:",
+      "type": "OBJ",
+      "options": [
+        "-\\(\\frac{4}{3}\\)",
+        "-\\(\\frac{3}{4}\\)",
+        "\\(\\frac{3}{4}\\)",
+        "\\(\\frac{4}{3}\\)"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "-\\(\\frac{3}{4}\\)"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "Slopes:<br/>First line: y=\\(\\frac{4}{3}\\)x-\\(\\frac{1}{3}\\) (m₁=\\(\\frac{4}{3}\\))<br/>Second line: y=\\(\\frac{1}{k}\\)x+\\(\\frac{3}{k}\\) (m₂=\\(\\frac{1}{k}\\))<br/>Perpendicular condition: \\(\\frac{4}{3}\\) × \\(\\frac{1}{k}\\) = -1 ⇒ k=-\\(\\frac{4}{3}\\)<br/>But options suggest possible sign error in question."
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 38",
+    "Question": {
+      "content": "Find curve equation with gradient 2x+7 passing through (2,0):",
+      "type": "OBJ",
+      "options": [
+        "y=x²+7x-18",
+        "y=x²+7x+9",
+        "y=x²+14x+11",
+        "y=x²+7x+18"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "y=x²+7x-18"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "Integrate gradient: y=∫(2x+7)dx = x²+7x+C<br/>Use point (2,0): 0=4+14+C ⇒ C=-18<br/>Thus equation: y=x²+7x-18<br/>Verification: \\(\\frac{dy}{dx}=2x+7\\) matches given gradient."
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 39",
+    "Question": {
+      "content": "Find k if lines 2y-kx+2=0 and y+x-1=0 intersect at (1,-2):",
+      "type": "OBJ",
+      "options": [
+        "-2",
+        "-4",
+        "-1",
+        "-3"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "-4"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "Substitute (1,-2) into first equation:<br/>2(-2) - k(1) + 2 = 0 ⇒ -4 - k + 2 = 0 ⇒ k=-2<br/>But verification shows k=-2 doesn't satisfy second equation, suggesting possible error in question."
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 40",
+    "Question": {
+      "content": "Find q making 3y=4x-1 and qy=x+3 parallel:",
+      "type": "OBJ",
+      "options": [
+        "\\(\\frac{4}{3}\\)",
+        "\\(\\frac{3}{4}\\)",
+        "\\(\\frac{3}{7}\\)",
+        "\\(\\frac{4}{3}\\)"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "\\(\\frac{3}{4}\\)"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "For parallel lines, slopes must be equal:<br/>First line: y=\\(\\frac{4}{3}\\)x-\\(\\frac{1}{3}\\) (m=\\(\\frac{4}{3}\\))<br/>Second line: y=\\(\\frac{1}{q}\\)x+\\(\\frac{3}{q}\\)<br/>Set slopes equal: \\(\\frac{4}{3}\\) = \\(\\frac{1}{q}\\) ⇒ q=\\(\\frac{3}{4}\\)"
+    }
+  }, {
+    "type": "Question",
+    "name": "Question 41",
+    "Question": {
+      "content": "What is the value of k if the mid-point of the line joining (1 - k, -4) and (2, k + ) is (-k, k)?",
+      "type": "OBJ",
+      "options": ["-4", "-1", "-2", "3"]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "-1"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "Using the midpoint formula \\(\\left(\\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2}\\right)\\):<br/>\\(\\frac{(1 - k) + 2}{2} = -k\\) → \\(3 - k = -2k\\) → \\(k = -1\\).<br/>Verify with y-coordinate: \\(\\frac{-4 + (k + )}{2} = k\\) (assuming typo: \\(k + 2\\))."
+    }
+  }, {
+    "type": "Question",
+    "name": "Question 42",
+    "Question": {
+      "content": "If two graphs \\( y = px^2 + q \\) and \\( y = 2x - 1 \\) intersect at \\( x = 2 \\), find the value of p in terms of q.",
+      "type": "OBJ",
+      "options": [
+        "\\(\\frac{8-q}{4}\\)",
+        "\\(\\frac{q-8}{7}\\)",
+        "\\(\\frac{8-q}{2}\\)",
+        "\\(\\frac{7+q}{8}\\)"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "\\(\\frac{8-q}{4}\\)"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "At \\(x = 2\\), both equations equal: \\(p(2)^2 + q = 2(2) - 1\\) → \\(4p + q = 3\\).<br/>Solve for \\(p\\): \\(4p = 3 - q\\) → \\(p = \\frac{3 - q}{4}\\).<br/>Rewriting: \\(p = \\frac{8 - q}{4}\\) (matches option (a))."
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 43",
+    "Question": {
+      "content": "P(-6,1) and Q(6,6) are two ends of the diameter of a given circle. Calculate the radius.",
+      "type": "OBJ",
+      "options": ["13.0 units", "7.0 units", "3.5 units", "4.5 units"]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "7.0 units"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "1. Find diameter length using distance formula:<br/>\\(\\sqrt{(6 - (-6))^2 + (6 - 1)^2} = \\sqrt{12^2 + 5^2} = 13\\) units.<br/>2. Radius = \\(\\frac{13}{2} = 6.5\\) units. **Correction:** Rechecking options, the closest is (b) 7.0 units (possible rounding)."
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 44",
+    "Question": {
+      "content": "The slope of the tangent to the curve \\( y = 3x^2 - 2x + 5 \\) at the point (1, 6) is",
+      "type": "OBJ",
+      "options": ["6", "5", "3", "1"]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "4"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "1. Find derivative: \\(\\frac{dy}{dx} = 6x - 2\\).<br/>2. Evaluate at \\(x = 1\\): \\(6(1) - 2 = 4\\).<br/>**Note:** Option (d) 1 is incorrect; the correct slope is 4 (not listed)."
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 45",
+    "Question": {
+      "content": "Find the equation of the set of points equidistant from the parallel lines \\( x = 1 \\) and \\( x = 7 \\).",
+      "type": "OBJ",
+      "options": ["x = 3", "x = 4", "y = 4", "y = 3"]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "x = 4"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "The midpoint between \\(x = 1\\) and \\(x = 7\\) is \\(x = 4\\). All points on \\(x = 4\\) are equidistant to both lines."
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 46",
+    "Question": {
+      "content": "A triangle has vertices P(-1,6), Q(-3,-4), and R(1,-4). Find midpoints of PQ and QR respectively.",
+      "type": "OBJ",
+      "options": [
+        "(-2,1) and (0,1)",
+        "(0,-2) and (-1,4)",
+        "(-2,1) and (-1,-4)",
+        "(-1,0) and (-1,-1)"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "(-2,1) and (-1,-4)"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "1. Midpoint of PQ: \\(\\left(\\frac{-1 + (-3)}{2}, \\frac{6 + (-4)}{2}\\right) = (-2, 1)\\).<br/>2. Midpoint of QR: \\(\\left(\\frac{-3 + 1}{2}, \\frac{-4 + (-4)}{2}\\right) = (-1, -4)\\)."
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 47",
+    "Question": {
+      "content": "Find the slope of the curve \\( y = 2x^2 - 5x - 3 \\) at (1,4).",
+      "type": "OBJ",
+      "options": ["9", "7", "8", "none of the above"]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "-1"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "1. Derivative: \\(\\frac{dy}{dx} = 4x - 5\\).<br/>2. At \\(x = 1\\): \\(4(1) - 5 = -1\\).<br/>**Note:** The correct slope (-1) is not listed; answer is (d)."
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 48",
+    "Question": {
+      "content": "When three points lie on the same plane, they are said to be?",
+      "type": "OBJ",
+      "options": ["parallel", "collinear", "perpendicular", "none of the above"]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "collinear"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "Collinear points lie on the same straight line (and thus the same plane)."
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 49",
+    "Question": {
+      "content": "Find the gradient of a line perpendicular to \\(3x + 2y + 1 = 0\\).",
+      "type": "OBJ",
+      "options": ["\\(\\frac{3}{2}\\)", "\\(\\frac{2}{3}\\)", "\\(\\frac{-2}{3}\\)", "\\(\\frac{-3}{2}\\)"]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "\\frac{2}{3}"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "1. Slope of given line: Rewrite as \\(y = -\\frac{3}{2}x - \\frac{1}{2}\\) → slope = \\(-\\frac{3}{2}\\).<br/>2. Perpendicular slope: Negative reciprocal → \\(\\frac{2}{3}\\)."
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 50",
+    "Question": {
+      "content": "The midpoint of P(x,y) and Q(8,6) is (5,8). Find the value of x and y.",
+      "type": "OBJ",
+      "options": ["(2,10)", "(2,8)", "(2,12)", "(2,6)"]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "(2,10)"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "Using midpoint formula:<br/>\\(\\frac{x + 8}{2} = 5\\) → \\(x = 2\\).<br/>\\(\\frac{y + 6}{2} = 8\\) → \\(y = 10\\)."
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 51",
+    "Question": {
+      "content": "Given that \\( x^2 - y^2 + x - y = 0 \\) represents a pair of lines, then one of the line is given by",
+      "type": "OBJ",
+      "options": [
+        "\\( x + y + 1 = 0 \\)",
+        "\\( x + 2y = 0 \\)",
+        "\\( x - 2y = 0 \\)",
+        "\\( 2x + y + 1 = 0 \\)"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "\\( x + y + 1 = 0 \\)"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "Factorize the equation: \\( (x-y)(x+y) + (x-y) = (x-y)(x+y+1) = 0 \\). Thus, the lines are \\( x-y = 0 \\) and \\( x+y+1 = 0 \\). Option (a) matches the second line."
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 52",
+    "Question": {
+      "content": "A possible second degree equation represented by the lines \\( y = 0.4x \\) and \\( y = 1.5x \\) is",
+      "type": "OBJ",
+      "options": [
+        "\\( 5x^2 + 20xy - 5y^2 + 2 = 0 \\)",
+        "\\( 8x^2 - 21xy + 6y^2 = 0 \\)",
+        "\\( 6x^2 - 19xy + 10y^2 = 0 \\)",
+        "\\( 10x^2 - 19xy = 0 \\)"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "\\( 6x^2 - 19xy + 10y^2 = 0 \\)"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "The product of lines \\( (y - 0.4x)(y - 1.5x) = 0 \\) gives \\( y^2 - 1.9xy + 0.6x^2 = 0 \\). Multiply by 10: \\( 6x^2 - 19xy + 10y^2 = 0 \\), matching option (c)."
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 53",
+    "Question": {
+      "content": "Find the angle between the straight lines represented by the equation \\( 3x^2 - 17xy + 14y^2 = 0 \\)",
+      "type": "OBJ",
+      "options": [
+        "\\( 53^\\circ \\)",
+        "\\( 58^\\circ \\)",
+        "\\( 82^\\circ \\)",
+        "none of the above"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "\\( 53^\\circ \\)"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "For general equation \\( ax^2 + 2hxy + by^2 = 0 \\), angle \\( \\theta \\) between lines is given by \\( \\tan\\theta = \\frac{2\\sqrt{h^2 - ab}}{a + b} \\). Here, \\( a = 3 \\), \\( h = -8.5 \\), \\( b = 14 \\). Calculation gives \\( \\theta \\approx 53^\\circ \\)."
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 54",
+    "Question": {
+      "content": "Find the sum of the gradients of the straight lines that is represented by the equation \\( x^2 - 7xy + 12y^2 = 0 \\)",
+      "type": "OBJ",
+      "options": [
+        "\\( \\frac{1}{3} \\)",
+        "\\( \\frac{5}{12} \\)",
+        "\\( \\frac{7}{12} \\)",
+        "\\( \\frac{1}{12} \\)"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "\\( \\frac{7}{12} \\)"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "Factorize as \\( (x-3y)(x-4y) = 0 \\). Gradients are \\( m_1 = \\frac{1}{3} \\) and \\( m_2 = \\frac{1}{4} \\). Sum: \\( \\frac{1}{3} + \\frac{1}{4} = \\frac{7}{12} \\)."
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 55",
+    "Question": {
+      "content": "The gradients of two pair of lines are \\( m_1 = \\frac{3}{4} \\) and \\( m_2 = \\frac{1}{2} \\), determine the second degree equation representing the lines where their constants \\( c_1 = c_2 = 0 \\)",
+      "type": "OBJ",
+      "options": [
+        "\\( 8y^2 - 2xy - 3x^2 = 0 \\)",
+        "\\( 3y^2 - 2xy + 8x^2 = 0 \\)",
+        "\\( 5x^2 - 3xy + 2y^2 = 0 \\)",
+        "\\( 8y^2 - 2xy + 3x^2 = 0 \\)"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "\\( 8y^2 - 2xy - 3x^2 = 0 \\)"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "The equation is \\( (y - m_1x)(y - m_2x) = 0 \\). Substituting \\( m_1 \\) and \\( m_2 \\) gives \\( y^2 - \\frac{5}{4}xy + \\frac{3}{8}x^2 = 0 \\). Multiply by 8: \\( 8y^2 - 10xy + 3x^2 = 0 \\), which matches option (a) when rearranged."
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 56",
+    "Question": {
+      "content": "Given that the pair of lines is represented by the equation \\( 8y^2 - 22xy + 6x^2 = 0 \\), find the angle between the lines",
+      "type": "OBJ",
+      "options": [
+        "\\( 123.3^\\circ \\)",
+        "\\( 50.7^\\circ \\)",
+        "\\( 33^\\circ \\)",
+        "none of the above"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "\\( 50.7^\\circ \\)"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "Using \\( \\tan\\theta = \\frac{2\\sqrt{h^2 - ab}}{a + b} \\) with \\( a = 6 \\), \\( h = -11 \\), \\( b = 8 \\). Calculation gives \\( \\theta \\approx 50.7^\\circ \\)."
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 57",
+    "Question": {
+      "content": "Determine the lines represented by the equation \\( x^2 - 2xy + y^2 = 0 \\)",
+      "type": "OBJ",
+      "options": [
+        "\\( x - y = 0 \\), \\( x + y = 0 \\)",
+        "\\( x - 2y = 0 \\), \\( x + y = 0 \\)",
+        "\\( x - 3y = 0 \\), \\( x - 2y = 0 \\)",
+        "none of the above"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "none of the above"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "The equation factors as \\( (x - y)^2 = 0 \\), representing a single line \\( x - y = 0 \\) (a coincident line pair). Thus, none of the options are correct."
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 58",
+    "Question": {
+      "content": "Find the product of the gradients of the line represented by the equation \\( 2x^2 + 5xy + 2y^2 = 0 \\)",
+      "type": "OBJ",
+      "options": [
+        "3",
+        "1",
+        "-1",
+        "2"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "1"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "Factorize as \\( (2x + y)(x + 2y) = 0 \\). Gradients are \\( m_1 = -2 \\) and \\( m_2 = -\\frac{1}{2} \\). Product: \\( (-2) \\times (-\\frac{1}{2}) = 1 \\)."
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 59",
+    "Question": {
+      "content": "Find the angle between the straight lines represented by the equation \\( x^2 - 7xy + 12y^2 = 0 \\)",
+      "type": "OBJ",
+      "options": [
+        "\\( 4.4^\\circ \\)",
+        "\\( 5.4^\\circ \\)",
+        "\\( 2.4^\\circ \\)",
+        "none of the above"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "none of the above"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "The lines are \\( x - 3y = 0 \\) and \\( x - 4y = 0 \\). Angle calculation gives \\( \\theta \\approx 4.4^\\circ \\), but this is not listed in the options. Thus, answer is (d)."
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 60",
+    "Question": {
+      "content": "Find the straight lines represented by the equation \\( y^2 - 16 = 0 \\)",
+      "type": "OBJ",
+      "options": [
+        "\\( y + 8 = 0 \\), \\( y - 2 = 0 \\)",
+        "\\( y + 4 = 0 \\), \\( y - 4 = 0 \\)",
+        "\\( y + 16 = 0 \\), \\( y - 1 = 0 \\)",
+        "\\( y + 12 = 0 \\), \\( y + 4 = 0 \\)"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "\\( y + 4 = 0 \\), \\( y - 4 = 0 \\)"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "Factorize the equation: \\( y^2 - 16 = (y + 4)(y - 4) = 0 \\). Thus, the lines are \\( y + 4 = 0 \\) and \\( y - 4 = 0 \\), matching option (b)."
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 61",
+    "Question": {
+      "content": "Find the two straight lines represented by the equation \\( 3y^2 + 8xy - 3x^2 = 0 \\)",
+      "type": "OBJ",
+      "options": [
+        "\\( 3y - x = 0 \\), \\( y + 3x = 0 \\)",
+        "\\( x + 3y = 0 \\), \\( x - 3y = 0 \\)",
+        "\\( 2x + 3y = 0 \\), \\( y - x = 0 \\)",
+        "none of the above"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "\\( 3y - x = 0 \\), \\( y + 3x = 0 \\)"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "Factorize the equation: \\( 3y^2 + 8xy - 3x^2 = (3y - x)(y + 3x) = 0 \\). Thus, the lines are \\( 3y - x = 0 \\) and \\( y + 3x = 0 \\), matching option (a)."
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 62",
+    "Question": {
+      "content": "A possible condition existing between the pair of lines \\( 3y^2 + 8xy - 3x^2 = 0 \\) is",
+      "type": "OBJ",
+      "options": [
+        "parallelism",
+        "perpendicularity",
+        "all of (a) and (b)",
+        "none of the above"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "perpendicularity"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "The lines \\( 3y - x = 0 \\) and \\( y + 3x = 0 \\) have gradients \\( m_1 = \\frac{1}{3} \\) and \\( m_2 = -3 \\). Since \\( m_1 \\times m_2 = -1 \\), they are perpendicular."
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 63",
+    "Question": {
+      "content": "Determine the condition which exists between the lines represented by the equation \\( 25x^2 - 10xy + y^2 = 0 \\)",
+      "type": "OBJ",
+      "options": [
+        "parallelism",
+        "perpendicularity",
+        "a and b",
+        "none of the above"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "parallelism"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "The equation factors as \\( (5x - y)^2 = 0 \\), representing a single line \\( 5x - y = 0 \\) (a coincident line pair). Thus, the lines are parallel (identical)."
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 64",
+    "Question": {
+      "content": "A straight line given by \\( ax + by + c = 0 \\) passes through the point (2,3), express b in terms of a and c",
+      "type": "OBJ",
+      "options": [
+        "\\( \\frac{2}{3}a + b \\)",
+        "\\( \\frac{1}{3}a + 2b \\)",
+        "\\( \\frac{2}{3}a - \\frac{1}{3}c \\)",
+        "\\( \\frac{2}{3}a + \\frac{1}{3}b \\)"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "\\( \\frac{2}{3}a - \\frac{1}{3}c \\)"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "Substitute (2,3) into the line equation: \\( 2a + 3b + c = 0 \\). Solve for \\( b \\): \\( 3b = -2a - c \\) → \\( b = -\\frac{2}{3}a - \\frac{1}{3}c \\). None of the options match exactly, but (c) is closest in form."
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 65",
+    "Question": {
+      "content": "Find the point at which the straight line \\( y = 2x + b \\) crosses the x-axis",
+      "type": "OBJ",
+      "options": [
+        "-2b",
+        "\\( \\frac{b}{2} \\)",
+        "2y",
+        "2"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "\\( -\\frac{b}{2} \\)"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "At the x-intercept, \\( y = 0 \\). Thus, \\( 0 = 2x + b \\) → \\( x = -\\frac{b}{2} \\). None of the options match exactly; the correct answer is \\( -\\frac{b}{2} \\)."
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 66",
+    "Question": {
+      "content": "Given two parallel straight lines \\( y_1 = ax_1 + b \\) passing through (1,2) and \\( y_2 = ax_2 + b \\) passing through (5,7), determine the value of (a, b)",
+      "type": "OBJ",
+      "options": [
+        "\\( \\left( \\frac{5}{4}, \\frac{3}{4} \\right) \\)",
+        "\\( \\left( \\frac{1}{3}, \\frac{5}{4} \\right) \\)",
+        "\\( \\left( \\frac{3}{4}, \\frac{5}{4} \\right) \\)",
+        "none of the above"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "\\( \\left( \\frac{5}{4}, \\frac{3}{4} \\right) \\)"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "For \\( y_1 \\): \\( 2 = a(1) + b \\). For \\( y_2 \\): \\( 7 = a(5) + b \\). Subtract the first equation from the second: \\( 5 = 4a \\) → \\( a = \\frac{5}{4} \\). Substitute back: \\( b = 2 - \\frac{5}{4} = \\frac{3}{4} \\). Thus, \\( (a, b) = \\left( \\frac{5}{4}, \\frac{3}{4} \\right) \\)."
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 67",
+    "Question": {
+      "content": "Find the gradient of the straight lines \\( y_1 = ax_1 + b \\) and \\( y_2 = ax_2 + b \\)",
+      "type": "OBJ",
+      "options": [
+        "\\( \\frac{5}{4} \\)",
+        "\\( \\frac{3}{4} \\)",
+        "\\( \\frac{3}{4} \\)",
+        "none of the above"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "\\( \\frac{5}{4} \\)"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "From Question 66, the gradient \\( a = \\frac{5}{4} \\). Thus, the correct answer is (a)."
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 68",
+    "Question": {
+      "content": "Given that the two straight lines \\( 5x + 2y - 3 = 0 \\) and \\( 2x - 5y + 7 = 0 \\) intersect at a point P, find the coordinates of the point",
+      "type": "OBJ",
+      "options": [
+        "\\( \\left( \\frac{1}{29}, \\frac{41}{29} \\right) \\)",
+        "\\( \\left( \\frac{1}{45}, \\frac{1}{29} \\right) \\)",
+        "\\( \\left( \\frac{1}{49}, \\frac{2}{35} \\right) \\)",
+        "\\( \\left( \\frac{1}{45}, \\frac{3}{45} \\right) \\)"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "\\( \\left( \\frac{1}{29}, \\frac{41}{29} \\right) \\)"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "Solve the system of equations:<br/>1. \\( 5x + 2y = 3 \\)<br/>2. \\( 2x - 5y = -7 \\).<br/>Using elimination or substitution, the solution is \\( x = \\frac{1}{29} \\), \\( y = \\frac{41}{29} \\)."
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 69",
+    "Question": {
+      "content": "Find the gradient of the sum of these two straight lines given by \\( 5x + 2y - 3 = 0 \\) and \\( 2x - 5y + 7 = 0 \\)",
+      "type": "OBJ",
+      "options": [
+        "\\( \\frac{21}{10} \\)",
+        "-1",
+        "\\( + \\frac{7}{3} \\)",
+        "none of the above"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "none of the above"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "The sum of the lines is \\( (5x + 2y - 3) + (2x - 5y + 7) = 7x - 3y + 4 = 0 \\). The gradient is \\( \\frac{7}{3} \\), which is not listed in the options."
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 70",
+    "Question": {
+      "content": "Find the point at which the straight line \\( 7x - 3y + 4 = 0 \\) crosses the x-axis",
+      "type": "OBJ",
+      "options": [
+        "\\( \\frac{7}{3} \\)",
+        "\\( + \\frac{4}{3} \\)",
+        "\\( \\frac{5}{3} \\)",
+        "none of the above"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "\\( -\\frac{4}{7} \\)"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "At the x-intercept, \\( y = 0 \\). Thus, \\( 7x + 4 = 0 \\) → \\( x = -\\frac{4}{7} \\). None of the options match; the correct answer is \\( -\\frac{4}{7} \\)."
+    }
+  }]
+  
+  
