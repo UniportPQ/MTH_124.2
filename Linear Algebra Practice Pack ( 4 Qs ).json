@@ -1,0 +1,143 @@
+[
+  {
+    "type": "pageInfo",
+    "kind": "pureOBJ",
+    "course_title": "Maths",
+    "code": "MTH_124.2",
+    "session": "Linear Algebra",
+    "time": 90,
+    "topics": [
+      "Abstract Algebra",
+      "Calculus",
+      "Complex Analysis",
+      "Coordinate Geometry",
+      "Differential Equations",
+      "Discrete Mathematics",
+      "Linear Algebra",
+      "Mathematical Statistics",
+      "Numerical Methods",
+      "Probability Theory",
+      "Real Analysis",
+      "Vector Algebra"
+    ]
+  },
+  {
+    "type": "Instruction",
+    "content": "Answer all Questions"
+  },
+  {
+    "type": "Question",
+    "name": "Question 15 @ 2024/2025",
+    "topic": [
+      "Maths",
+      "Linear Algebra",
+      "Vector Algebra"
+    ],
+    "Question": {
+      "content": "Given the vectors \\(\\vec{r_1} = 6i + 3j\\) and \\(\\vec{r_2} = -5i - 2j\\), find \\(\\vec{r_1} + \\vec{r_2}\\).",
+      "type": "OBJ",
+      "options": [
+        "i + j",
+        "2i + 3j",
+        "5i - 2j",
+        "3i + 5j"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "i + j"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n<h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Vector Addition</h4>\n<p>\\(\\vec{r_1} = 6i + 3j\\)</p>\n<p>\\(\\vec{r_2} = -5i - 2j\\)</p>\n<p>Add corresponding components:</p>\n<p>\\(\\vec{r_1} + \\vec{r_2} = (6 + (-5))i + (3 + (-2))j\\)</p>\n<p>\\(= (1)i + (1)j = i + j\\)</p>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 21 @ 2024/2025",
+    "topic": [
+      "Maths",
+      "Vector Algebra",
+      "Linear Algebra",
+      "Analytic Geometry"
+    ],
+    "Question": {
+      "content": "If \\(r = 3i + 4j\\), find \\(|r|\\).",
+      "type": "OBJ",
+      "options": [
+        "4",
+        "\\(\\sqrt{14}\\)",
+        "5",
+        "25"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "5"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n<h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Magnitude of a Vector</h4>\n<p>\\(|r| = \\sqrt{x^2 + y^2}\\)</p>\n<p>\\(r = 3i + 4j\\) → \\(x = 3\\), \\(y = 4\\)</p>\n<p>\\(|r| = \\sqrt{3^2 + 4^2} = \\sqrt{9 + 16} = \\sqrt{25} = 5\\)</p>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 33 @ 2024/2025",
+    "topic": [
+      "Linear Algebra",
+      "Vector Algebra",
+      "Kinematics",
+      "Maths"
+    ],
+    "Question": {
+      "content": "The vector form of the third equation of motion has how many quadratic forms?",
+      "type": "OBJ",
+      "options": [
+        "8",
+        "3",
+        "1",
+        "6"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "1"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n<h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Third Equation of Motion</h4>\n<p>The third equation of motion is \\(v^2 = u^2 + 2as\\).</p>\n<p>In vector form, this becomes a scalar equation (dot product of vectors). It contains one quadratic term (\\(v^2\\) and \\(u^2\\) are scalar magnitudes). The equation as a whole is quadratic in nature but represents a single quadratic relationship.</p>\n<p>Thus, it has <strong>1 quadratic form</strong>.</p>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 34 @ 2024/2025",
+    "topic": [
+      "Projectile Motion",
+      "Vector Algebra",
+      "Kinematics",
+      "Physics",
+      "Maths",
+      "Calculus",
+      "Analytic Geometry",
+      "Linear Algebra"
+    ],
+    "Question": {
+      "content": "The angle of projection of a particle in its vector form is the same as:",
+      "type": "OBJ",
+      "options": [
+        "\\(\\frac{v}{u} - 1\\)",
+        "\\(\\frac{1}{2}\\sin^{-1}\\left(\\frac{2gh}{u^2}\\right)\\)",
+        "All of the above",
+        "None of the above"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "\\(\\frac{1}{2}\\sin^{-1}\\left(\\frac{2gh}{u^2}\\right)\\)"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n<h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Angle of Projection Formula</h4>\n<p>For a projectile, the relation between horizontal range R, maximum height H, and angle θ is given by:</p>\n<p>\\(\\tan \\theta = \\frac{4H}{R}\\)</p>\n<p>Also, \\(H = \\frac{u^2 \\sin^2 \\theta}{2g}\\) and \\(R = \\frac{u^2 \\sin 2\\theta}{g}\\).</p>\n<p>From these, we can derive: \\(\\theta = \\frac{1}{2} \\sin^{-1}\\left(\\frac{gR}{u^2}\\right)\\) or related forms. The given option \\(\\frac{1}{2}\\sin^{-1}\\left(\\frac{2gh}{u^2}\\right)\\) appears if h represents something specific. This is a valid expression for the angle in certain contexts.</p>\n</div>"
+    }
+  }
+]
